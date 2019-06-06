@@ -8,6 +8,33 @@
     <title>Triangle Tracker</title>
   </head>
   <body>
+    <div class="container">
+    <h1>What kind of triangle?</h1>
+    <div>
+      <form id="triangle" action="index.html" method="post">
+        <label for="side1">First Side:</label>
+        <input id="sideA" type="number">
 
+        <label for="side2">Second Side:</label>
+        <input id="sideB" type="number">
+
+        <label for="side3">Third Side:</label>
+        <input id="sideC" type="number">
+
+        <button type="submit" class="btn">Triangulate!</button>
+        <div id="equil">
+          <p>Your triangle is Equilateral!</p>
+        </div>
+        <div id="iso">
+          <p>Your triangle is Isosceles!</p>
+        </div>
+        <div id="scal">
+          <p>Your triangle is Scalene!</p>
+        </div>
+        <div id="no">
+          <p>Sorry, this is not a triangle!</p>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
